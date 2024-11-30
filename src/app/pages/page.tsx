@@ -1,9 +1,10 @@
+import { useTheme } from "@emotion/react";
 import { Box, Typography } from "@mui/material";
-import Image from "next/image";
 
 export default function Home() {
+  const theme = useTheme();
   return (
-    <Box sx={{ bgcolor: "#F1E7DA" }}>
+    <Box color={theme.primary}>
       <Typography>Success!</Typography>
     </Box>
         
